@@ -1,0 +1,45 @@
+
+#CALLING THE WoRMS WEBSERVICE FROM PYTHON
+#link to directions.... 
+https://sourceforge.net/projects/pywebsvcs/?source=typ_redirect
+
+#step 1: install python 2
+https://www.python.org
+
+#step 2: download soap library for python : SOAPy SOAP/XML Schema library for Python
+https://sourceforge.net/projects/pythonsoap/files/latest/download?source=rw_typ_t5
+
+#setup soapy library
+#!/usr/bin/env python
+
+from distutils.core import setup
+setup(name="soapy",
+    version="0.1",
+    description="SOAP/XML Schema Library for Python",
+    author="Adam Elman",
+    author_email="aelman@users.sourceforge.net",
+    url="http://soapy.sourceforge.net",
+    py_modules=["soap","schema"])
+
+#step 3: copy/paste code in a file 'worms.py' here's the link
+http://www.marinespecies.org/aphia.php?p=webservice&type=python
+
+#step 4: Step 4: Run the script from the command line [followed by taxon name(s)]:
+./worms.py Mollusca 
+
+#here's my species list....
+./worms.py Stenotomus_chrysopos
+./worms.py Lophius_americanus
+./worms.py Pomatomus_saltarix
+./worms.py Morone_saxatillis
+./worms.py Melanogrammus_aeglefinus
+./worms.py Coryphaena_hippurus
+./worms.py Thunnus_alalunga
+./worms.py Lopholatilus_chamaelonticeps
+./worms.py Litopenaeus_setiferus
+./worms.py Xiphias_gladius
+./worms.py Pollachius_virens
+./worms.py Merluccius_Bilinearis
+./worms.py Sebates_fasciatus
+./worms.py Paralichthys_dentatus
+./worms.py Zeus_faber
